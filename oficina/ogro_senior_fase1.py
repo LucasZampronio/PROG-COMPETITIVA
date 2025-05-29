@@ -2,7 +2,6 @@ e = int(input())
 d = int(input())
 
 
-
 if e > d:
     soma = e + d
     print(soma)
