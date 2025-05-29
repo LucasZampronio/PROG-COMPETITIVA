@@ -9,12 +9,14 @@ def quicksort(array):
     
         return quicksort(menores) + [pivo] + quicksort(maiores)
     
-lista = []
 numero = int(input())
-valores_energia = int(input().split())
-if valores_energia != numero:
-    print('')
+valores = list(map(int, input().split()))
+ordenada = quicksort(valores)
+for i in range(numero):
+    if i  == len(ordenada) - 1:
+        print(ordenada[i])
+    else:
+        print(ordenada[i], end=' ')
 
-for valor in valores_energia:
-    lista.append(int(valor))
+
 
