@@ -1,6 +1,9 @@
-x = 34000
-y = bin(x)[2:]
-print(y)
+def soma(a, b):
+    return a + b
 
-i = int('1000010000100001', 2)
-print(i)
+resultado = soma(3, 5)
+print(resultado)
+
+
+
+
