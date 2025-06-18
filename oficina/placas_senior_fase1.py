@@ -1,7 +1,7 @@
 import re 
 
-placa_velha = r'^[A-Z]{3}-[0-9]{4}$'
-mercosul = r'^[A-Z]{3}[0-9][A-Z][0-9]$'
+placa_velha = r'^[A-Z]{3}\-[0-9]{4}$'
+mercosul = r'^[A-Z]{3}[0-9][A-Z][0-9]{2}$'
 
 placa = input()
 if re.match(placa_velha, placa):
